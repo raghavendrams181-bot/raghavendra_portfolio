@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Raghavendra M S - Electronics & Communication Engineering student and Software Developer.">
+  <title>Raghavendra M S | 3D Portfolio</title>
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js Library for 3D Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+<body>
+  
+  <!-- ===================================================================== -->
+  <!-- HEADER & NAVIGATION                                                  -->
+  <!-- ===================================================================== -->
+  <header id="site-header" class="glass-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        <span class="gradient-text">RAGHAVENDRA M S</span>
+      </a>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#timeline" class="nav-link">Timeline</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Toggle -->
+      <div class="theme-toggle-container">
+        <button id="theme-toggle-btn" class="glass-btn icon-btn" type="button" aria-label="Toggle Theme">
+          <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- =================================================================== -->
+    <!-- 3D HERO SECTION                                                     -->
+    <!-- =================================================================== -->
+    <section id="hero" class="hero-section">
+      <!-- Three.js Canvas Container -->
+      <canvas id="hero-3d-canvas" class="webgl-canvas"></canvas>
+      
+      <!-- Overlay Gradient for Readability -->
+      <div class="hero-gradient-overlay"></div>
+
+      <div class="section-container">
+        
+        <!-- Apple macOS Window Frame -->
+        <div class="apple-window-frame glass-card 3d-float-element">
+          
+          <!-- macOS Window Title Bar -->
+          <div class="apple-window-header">
+            <div class="apple-window-controls">
+              <span class="mac-btn close"></span>
+              <span class="mac-btn minimize"></span>
+              <span class="mac-btn maximize"></span>
+            </div>
+            <div class="apple-window-title">raghavendra_portfolio — macOS</div>
+            <div class="apple-window-spacer"></div>
+          </div>
+          
+          <!-- macOS Window Body -->
+          <div class="apple-window-body hero-grid">
+            
+            <!-- Left: Content -->
+            <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering the <br>
+            <span class="gradient-text">Future.</span>
+          </h1>
+          
+          <h2 class="hero-subtitle">Electronics &amp; Software Developer</h2>
+          
+          <p class="hero-description">
+            Bridging hardware circuits with robust software logic. Passionate about C, Python, and crafting high-performance systems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-3d">View Work</a>
+            <a href="WhatsApp Image 2026-10-07 at 10.05.17.jpeg" target="_blank" download="Raghavendra_Resume.jpg" class="btn btn-outline btn-3d">Resume</a>
+          </div>
+        </div>
+
+        <!-- Right: 3D Profile Display -->
+        <div class="hero-visual">
+          <div class="profile-3d-card">
+            <div class="profile-image-container">
+              <img src="hero-bg.jpg" alt="Raghavendra M S" class="profile-image">
+              <div class="glass-reflection"></div>
+            </div>
+            
+            <div class="profile-stats">
+              <div class="stat-group">
+                <span class="stat-label">Location</span>
+                <span class="stat-value">Karnataka, India</span>
+              </div>
+              <div class="stat-group">
+                <span class="stat-label">College</span>
+                <span class="stat-value">AIT (2025-2029)</span>
+              </div>
+              <div class="stat-group">
+                <span class="stat-label">Core Tech</span>
+                <span class="stat-value">C &amp; Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          </div> <!-- End apple-window-body -->
+        </div> <!-- End apple-window-frame -->
+        
+      </div> <!-- End section-container -->
+      
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- ABOUT SECTION                                                       -->
+    <!-- =================================================================== -->
+    <section id="about" class="about-section page-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text glass-card">
+            <p>
+              I am an ambitious Electronics & Communication Engineering student at Adhichunchanagiri Institute of Technology. I thrive at the intersection of hardware and software, leveraging analytical problem-solving to build real-world systems.
+            </p>
+            <p>
+              My expertise lies in C programming, Python automation, and foundational electronics. Whether I am analyzing circuits or compiling code, my goal is always to engineer robust, efficient, and scalable solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SKILLS SECTION                                                      -->
+    <!-- =================================================================== -->
+    <section id="skills" class="skills-section page-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Core <span class="gradient-text">Expertise</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 3D Glass Skill Cards -->
+          <div class="skill-card glass-card">
+            <div class="skill-icon-3d">💻</div>
+            <h3>Software Dev</h3>
+            <div class="skill-tags">
+              <span>C Programming</span>
+              <span>Python</span>
+              <span>DSA</span>
+            </div>
+          </div>
+          
+          <div class="skill-card glass-card">
+            <div class="skill-icon-3d">⚡</div>
+            <h3>Electronics</h3>
+            <div class="skill-tags">
+              <span>Circuit Analysis</span>
+              <span>Digital Logic</span>
+              <span>Hardware</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card">
+            <div class="skill-icon-3d">🌐</div>
+            <h3>Web &amp; Tools</h3>
+            <div class="skill-tags">
+              <span>HTML/CSS</span>
+              <span>Git</span>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TIMELINE SECTION                                                    -->
+    <!-- =================================================================== -->
+    <section id="timeline" class="timeline-section page-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+        </div>
+
+        <div class="timeline-track">
+          
+          <div class="timeline-node glass-card">
+            <div class="node-indicator"></div>
+            <div class="node-date">2025 — 2029</div>
+            <h3>B.E. Electronics &amp; Communication</h3>
+            <h4>Adhichunchanagiri Institute of Technology</h4>
+            <p>Pursuing undergraduate degree focused on digital circuits, communication systems, and core software engineering. CGPA: 6.5</p>
+          </div>
+
+          <div class="timeline-node glass-card">
+            <div class="node-indicator"></div>
+            <div class="node-date">PUC (12th Grade)</div>
+            <h3>Pre-University Science</h3>
+            <h4>Physics, Chemistry, Mathematics</h4>
+            <p>Graduated with 85.5%, building a strong mathematical and analytical foundation for engineering.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- CONTACT SECTION                                                     -->
+    <!-- =================================================================== -->
+    <section id="contact" class="contact-section page-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Start a <span class="gradient-text">Conversation</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass-card">
+            <h3>Let's Collaborate</h3>
+            <p>I'm currently seeking entry-level opportunities and exciting engineering projects.</p>
+            
+            <div class="contact-links">
+              <a href="mailto:raghvendrams19@gmail.com" class="contact-link">
+                <span class="icon">📧</span> raghvendrams19@gmail.com
+              </a>
+              <a href="tel:+919148700523" class="contact-link">
+                <span class="icon">📱</span> +91 9148700523
+              </a>
+            </div>
+          </div>
+          
+          <form class="contact-form glass-card">
+            <div class="form-group">
+              <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-3d">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="glass-footer">
+    <div class="section-container">
+      <p>&copy; <span id="current-year">2026</span> Raghavendra M S. Engineered with passion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
